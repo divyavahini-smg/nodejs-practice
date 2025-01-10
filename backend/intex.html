@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>Hello World</h1>
+    </body>
+    <script>
+        const url = 'https://fuzzy-couscous-r46pg9pwxp9jfxg5w-3333.app.github.dev';
+        fetch(url,{
+            method: "POST",
+            body: JSON.stringify({
+                name: "Harish",
+                age:20,
+                rollnumber:233021
+            }),
+            headers: {
+                'Content-Type': 'applications/json'
+            }
+        })
+        .then((response) => {
+            console.log(response)
+        })        
+    </script>
+</html>
